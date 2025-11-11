@@ -2,7 +2,7 @@
 #include <zlib.h>
 using namespace std;
 
-constexpr size_t BS = 4096, MAP = BS / 8;
+constexpr size_t BS = 4*1024*1024, MAP = BS / 8;
 
 class Progress {
     size_t total;
